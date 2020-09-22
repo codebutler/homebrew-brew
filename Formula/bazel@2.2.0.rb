@@ -5,6 +5,12 @@ class BazelAT220 < Formula
   sha256 "9379878a834d105a47a87d3d7b981852dd9f64bc16620eacd564b48533e169a7"
   revision 1
 
+  bottle do
+    root_url "https://github.com/codebutler/homebrew-brew/releases/download/bazel_2.2.0/"
+    cellar :any_skip_relocation
+    sha256 "1b0be14c5c33fd88cfcafa1929bb7b87e23caab8faf56412b6a136cfdb196deb" => :catalina
+  end
+
   depends_on "python@3.8" => :build
   depends_on :java => "1.8"
   depends_on :macos => :yosemite
