@@ -77,7 +77,7 @@ class Gdal < Formula
     depends_on "json-c"
   end
 
-  depends_on :java => ["1.7+", :optional, :build]
+  depends_on "openjdk@8"
 
   if build.with? "swig-java"
     depends_on "ant" => :build

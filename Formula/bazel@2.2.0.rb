@@ -12,7 +12,7 @@ class BazelAT220 < Formula
   end
 
   depends_on "python@3.8" => :build
-  depends_on :java => "1.8"
+  depends_on "openjdk@8"
   depends_on :macos => :yosemite
 
   uses_from_macos "zip"
